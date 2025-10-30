@@ -18,40 +18,42 @@
       font-family: 'Cormorant Garamond', serif;
       background: var(--bg);
       color: var(--ink);
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
       text-align: center;
-      padding: 40px;
+      padding: 40px 20px;
       box-sizing: border-box;
     }
 
     .section {
-      max-width: 800px;
       width: 100%;
+      max-width: 760px;
       background: var(--card);
       border: 1px solid #d4c19c;
-      border-radius: 16px;
-      padding: 40px;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      border-radius: 18px;
+      padding: 45px 50px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
     }
 
     h1 {
-      font-size: 2.4rem;
-      margin-bottom: 0.3rem;
+      font-size: 2.6rem;
+      margin: 0 0 0.3rem 0;
+      letter-spacing: 0.5px;
     }
 
     p.subtitle {
       font-style: italic;
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       color: var(--muted);
-      margin-bottom: 30px;
+      margin-bottom: 32px;
     }
 
     p {
-      font-size: 1.1rem;
-      line-height: 1.8;
+      font-size: 1.15rem;
+      line-height: 1.9;
       margin-bottom: 20px;
       color: var(--ink);
     }
@@ -62,17 +64,18 @@
       font-style: italic;
       font-size: 1.2rem;
       color: #4b2e05;
-      margin-top: 20px;
+      margin-top: 25px;
     }
 
     a.back {
       display: inline-block;
-      margin-top: 25px;
+      margin-top: 28px;
       color: var(--muted);
       text-decoration: none;
       border: 1px solid var(--accent);
-      padding: 8px 16px;
-      border-radius: 6px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 1rem;
       transition: all 0.3s ease;
     }
 
@@ -85,44 +88,64 @@
       margin-top: 25px;
       font-style: italic;
       color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.6;
     }
 
-    /* ✅ Responsive Fixes */
+    /* 🌿 Fully Mobile Responsive */
     @media (max-width: 768px) {
       body {
-        display: block; /* allow natural flow instead of fixed centering */
-        padding: 20px;
+        align-items: flex-start;
+        padding: 30px 18px;
       }
       .section {
-        margin: 40px auto;
-        padding: 25px;
+        padding: 30px 22px;
+        border-radius: 14px;
         box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
       }
       h1 {
+        font-size: 2.1rem;
+      }
+      p.subtitle {
+        font-size: 1.05rem;
+        margin-bottom: 24px;
+      }
+      p {
+        font-size: 1.05rem;
+        line-height: 1.7;
+      }
+      .motto {
+        font-size: 1.05rem;
+      }
+      a.back {
+        padding: 8px 16px;
+        font-size: 0.95rem;
+      }
+      footer {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .section {
+        padding: 22px 15px;
+      }
+      h1 {
         font-size: 1.9rem;
+      }
+      p.subtitle {
+        font-size: 1rem;
       }
       p {
         font-size: 1rem;
         line-height: 1.6;
       }
       .motto {
-        font-size: 1rem;
-      }
-      a.back {
-        padding: 6px 12px;
         font-size: 0.95rem;
       }
-    }
-
-    @media (max-width: 400px) {
-      .section {
-        padding: 20px 15px;
-      }
-      h1 {
-        font-size: 1.7rem;
-      }
-      p.subtitle {
-        font-size: 1rem;
+      a.back {
+        padding: 7px 14px;
+        font-size: 0.9rem;
       }
     }
   </style>
@@ -140,11 +163,9 @@
 
     <p class="motto">“Where logic meets imagination — and both serve creation.”</p>
 
-    <p> - By Shasank chowdary Lingutla</p>
+    <p> - By Lingutla Shasank Chowdary</p>
 
     <a href="index.html" class="back">← Back to Home</a>
-
-    
 
     <footer>
       © 2025 AnalytixMark. Crafted with devotion.
