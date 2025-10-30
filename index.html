@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VNMPerspective</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cormorant Garamond', serif;
+      background: #f3e8d0;
+      color: #3b2f2f;
+      overflow-x: hidden;
+      text-align: center;
+    }
+    header {
+      margin-top: 80px;
+      border-bottom: 2px solid #bfa46f;
+      display: inline-block;
+      padding-bottom: 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+    }
+    h1 a {
+      text-decoration: none;
+      color: #3b2f2f;
+    }
+    h1 a:hover {
+      color: #8a6e45;
+    }
+    p.subtitle {
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #5c4a32;
+      margin-bottom: 10px;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: nowrap;
+      margin: 80px 0;
+    }
+    .box {
+      width: 25%;
+      min-width: 250px;
+      height: 300px;
+      background: #fdf8e3;
+      border: 1px solid #d4c19c;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+    .box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    }
+    .box h2 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #3b2f2f;
+    }
+    .box p {
+      margin-top: 10px;
+      font-style: italic;
+      color: #5a4934;
+      font-size: 1.1rem;
+    }
+    footer {
+      margin-bottom: 50px;
+      color: #cc0707;
+      font-style: italic;
+    }
+    @media (max-width: 1000px) {
+      .container {
+        flex-wrap: wrap;
+      }
+      .box {
+        width: 70%;
+        height: auto;
+      }
+    }
+
+    .main-circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 300px;
+      height: 300px;
+      margin: 60px auto;
+      background: radial-gradient(circle, #fdf8e3, #e6d2a4);
+      border: 2px solid #d4c19c;
+      border-radius: 50%;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      cursor: pointer;
+      text-decoration: none;   /* removes underline */         
+       
+    }
+    .main-circle:hover {
+      transform: scale(1.05);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2);
+    }
+    .main-circle h2 {
+      font-size: 1.8rem;
+      color: #3b2f2f;
+    }
+    .main-circle p {
+      font-style: italic;
+      color: #5a4934;
+      font-size: 1rem;
+      margin-top: 8px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="sraddha.html">“SRADDHA”</a></h1>
+    <p class="subtitle"></a>A blog by <a href="about.html">"VNM”</p>
+  </header>
+  <div class="main-circle">
+  <a href="map.html">
+    <h2>The Map of All Knowledge</h2>
+    <p>The epistemological structure of sraddha</p>
+  </a>
+</div> 
+  <div class="container">
+    <a class="box" href="philosophy.html">
+      <h2>Philosophy of Life</h2>
+      <p>A self-centric perspective that leads to selfless service.</p>
+    </a>
+
+    <div class="box">
+      <h2>Map of Aerospace Engineering Knowledge</h2>
+      <p>Understanding the structure of knowledge in engineering.</p>
+    </div>
+
+    <div class="box">
+      <h2>Theory of Aesthetics</h2>
+      <p>Exploring the science and soul behind beauty.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>ॐ अमृतेश्वर्ये नमः</p>
+  </footer>
+</body>
+</html>
