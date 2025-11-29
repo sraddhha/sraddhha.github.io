@@ -127,11 +127,23 @@
     }
 
   </style>
+  <style>
+  /* This CSS makes the link look exactly like normal text */
+  .secret-link {
+    text-decoration: none; /* Removes the underline */
+    color: inherit;        /* Forces it to use the text color of the paragraph, not blue */
+  }
+  
+  /* Optional: If you want to hide the "hand" cursor icon as well, 
+     uncomment the line below. Otherwise, the mouse will still turn 
+     into a pointer when hovering. */
+  /* .secret-link { cursor: default; } */
+</style>
 </head>
 <body>
   <header>
     <h1><a href="sraddha.html">“SRADDHA”</a></h1>
-    <p class="subtitle"></a>A  <a href="about.html">"VNM”</p> Philosophy
+    <p class="subtitle">A <a href="about.html" class="secret-link">“VNM”</a> Philosophy</p>
   </header>
   <div class="main-circle">
   <a href="map.html">
@@ -165,5 +177,6 @@
   </footer>
 </body>
 </html>
+
 
 
