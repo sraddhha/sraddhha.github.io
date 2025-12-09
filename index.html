@@ -59,13 +59,10 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      /* Removed cursor pointer from base class since one box is now a div containing links */
       text-decoration: none;
       color: inherit;
-    }
-    /* Add pointer cursor specifically to anchor tag boxes */
-    a.box {
-      cursor: pointer;
+      /* Added cursor pointer to all boxes so the div behaves like a link visually */
+      cursor: pointer; 
     }
     
     .box:hover {
@@ -84,25 +81,27 @@
       font-size: 1.1rem;
     }
 
-    /* New CSS for the buttons inside the box */
+    /* CSS for the buttons inside the box */
     .box-buttons {
       margin-top: 20px;
       display: flex;
       flex-direction: row;
       justify-content: center;
-      gap: 20px; /* Space between the two links */
+      gap: 20px; 
     }
     
     .box-buttons a {
-      color: #000000; /* Pure black as requested */
-      text-decoration: underline; /* Underlined as requested */
+      color: #000000; /* Pure black */
+      text-decoration: underline; 
       font-weight: bold;
       font-size: 1rem;
-      z-index: 10; /* Ensures links are clickable */
+      z-index: 10; 
+      /* Ensure these look clickable */
+      cursor: pointer;
     }
     
     .box-buttons a:hover {
-      color: #5c4a32; /* Slight color change on hover to match theme */
+      color: #5c4a32; 
     }
 
     footer {
@@ -151,15 +150,12 @@
       font-size: 1rem;
       margin-top: 8px;
     }
-
+    
+    .secret-link {
+      text-decoration: none;
+      color: inherit;
+    }
   </style>
-  <style>
-  /* This CSS makes the link look exactly like normal text */
-  .secret-link {
-    text-decoration: none; /* Removes the underline */
-    color: inherit;        /* Forces it to use the text color of the paragraph, not blue */
-  }
-</style>
 </head>
 <body>
   <header>
@@ -175,13 +171,17 @@
   </div> 
 
   <div class="container">
-    <div class="box">
+    <div class="box" onclick="location.href='philosophy.html'">
       <h2>Philosophy of Life</h2>
       <p>A self-centric perspective that leads to selfless service.</p>
       
       <div class="box-buttons">
-        <a href="https://1drv.ms/b/c/f03f6111d0515899/IQA8Gn7UbQq0SbUqogUMxGseAU7z02V-GW0JHw0T73JdS4U?e=eyWkhe" target="_blank">Download the PDF</a>
-        <a href="review.html">Read Review</a>
+        <a href="https://1drv.ms/b/c/f03f6111d0515899/IQA8Gn7UbQq0SbUqogUMxGseAU7z02V-GW0JHw0T73JdS4U?e=eyWkhe" 
+           target="_blank" 
+           onclick="event.stopPropagation()">Download the PDF</a>
+           
+        <a href="review.html" 
+           onclick="event.stopPropagation()">Read Review</a>
       </div>
     </div>
 
@@ -192,7 +192,8 @@
 
     <div class="box">
       <h2>Theory of Aesthetics</h2>
-      <p>Exploring the science and soul behind beauty.</p>
+      <p style="color: #8a6e45; font-weight: bold; margin-bottom: 0;">Coming Soon...</p>
+      <p style="margin-top: 5px;">Exploring the science and soul behind beauty.</p>
     </div>
   </div>
 
