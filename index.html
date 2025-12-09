@@ -20,22 +20,27 @@
       padding-bottom: 20px;
     }
     h1 {
-      font-size: 3rem;
       margin-bottom: 0.5rem;
-      letter-spacing: 1px;
+      /* Removed font-size restriction slightly so the image container fits naturally, 
+         but keeping h1 semantics is fine. */
+      margin: 0; 
+      padding: 0;
     }
     h1 a {
       text-decoration: none;
       color: #3b2f2f;
+      display: inline-block; /* Ensures the link wraps the image correctly */
     }
+    /* Hover effect removed for image clarity, or you can keep opacity transition if desired */
     h1 a:hover {
-      color: #8a6e45;
+      opacity: 0.8; /* Subtle interaction effect for the logo */
     }
     p.subtitle {
       font-style: italic;
       font-size: 1.1rem;
       color: #5c4a32;
       margin-bottom: 10px;
+      margin-top: 10px;
     }
     .container {
       display: flex;
@@ -159,7 +164,11 @@
 </head>
 <body>
   <header>
-    <h1><a href="sraddha.html">“SRADDHA”</a></h1>
+    <h1>
+        <a href="sraddha.html">
+            <img src="sraddhha_logo.png" alt="SRADDHA" style="max-height: 100px; width: auto;">
+        </a>
+    </h1>
     <p class="subtitle">A <a href="about.html" class="secret-link">VNM</a> Philosophy</p>
   </header>
   
@@ -205,4 +214,3 @@
   </footer>
 </body>
 </html>
-
