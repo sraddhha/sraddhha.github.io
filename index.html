@@ -49,7 +49,6 @@
     .box {
       width: 25%;
       min-width: 250px;
-      height: 300px;
       background: #fdf8e3;
       border: 1px solid #d4c19c;
       border-radius: 16px;
@@ -108,8 +107,7 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       text-align: center;
       cursor: pointer;
-      text-decoration: none;   /* removes underline */         
-       
+      text-decoration: none;
     }
     .main-circle:hover {
       transform: scale(1.05);
@@ -126,47 +124,57 @@
       margin-top: 8px;
     }
 
+    .secret-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* NEW BUTTON STYLES */
+    .link-button {
+      margin-top: 12px;
+      font-size: 1rem;
+      color: #000000;
+      text-decoration: underline;
+      cursor: pointer;
+    }
   </style>
-  <style>
-  /* This CSS makes the link look exactly like normal text */
-  .secret-link {
-    text-decoration: none; /* Removes the underline */
-    color: inherit;        /* Forces it to use the text color of the paragraph, not blue */
-  }
-  
-  /* Optional: If you want to hide the "hand" cursor icon as well, 
-     uncomment the line below. Otherwise, the mouse will still turn 
-     into a pointer when hovering. */
-  /* .secret-link { cursor: default; } */
-</style>
 </head>
 <body>
   <header>
     <h1><a href="sraddha.html">“SRADDHA”</a></h1>
     <p class="subtitle">A <a href="about.html" class="secret-link">VNM</a> Philosophy</p>
   </header>
+
   <div class="main-circle">
-  <a href="map.html">
-    <h2>The Map of All Knowledge</h2>
-    <p>The epistemological structure of sraddha</p>
-  </a>
-</div> 
+    <a href="map.html">
+      <h2>The Map of All Knowledge</h2>
+      <p>The epistemological structure of sraddha</p>
+    </a>
+  </div>
+
   <div class="container">
-    <a class="box" href="philosophy.html">
+
+    <!-- Philosophy of Life Box with Buttons -->
+    <div class="box">
       <h2>Philosophy of Life</h2>
       <p>A self-centric perspective that leads to selfless service.</p>
-    </a>
 
-    <!-- Modified box below -->
+      <a href=\"https://1drv.ms/b/c/f03f6111d0515899/IQA8Gn7UbQq0SbUqogUMxGseAU7z02V-GW0JHw0T73JdS4U?e=gPmVce\" target=\"_blank\" class="link-button" target="_blank">Download the PDF</a>
+      <a href="review.html" class="link-button">Read Review</a>
+    </div>
+
+    <!-- Epistemological Map Block -->
     <a class="box" href="https://1drv.ms/b/c/f03f6111d0515899/IQAXhisH6PmVQ70nTE_ishQtAR06uMv3A4754KsL6U5-_kI?e=KF3SSW" target="_blank" rel="noopener noreferrer">
-      <h2>An Epistomological Map of Aerospace Engineering Knowledge</h2>
+      <h2>An Epistemological Map of Aerospace Engineering Knowledge</h2>
       <p>Understanding the structure of knowledge in engineering.</p>
     </a>
 
+    <!-- Aesthetics Block -->
     <div class="box">
       <h2>Theory of Aesthetics</h2>
       <p>Exploring the science and soul behind beauty.</p>
     </div>
+
   </div>
 
   <footer>
@@ -177,8 +185,3 @@
   </footer>
 </body>
 </html>
-
-
-
-
-
