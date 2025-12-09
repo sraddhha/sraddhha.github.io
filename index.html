@@ -12,6 +12,8 @@
       color: #3b2f2f;
       overflow-x: hidden;
       text-align: center;
+      /* Scales the website to 80% by default */
+      zoom: 80%;
     }
     header {
       margin-top: 80px;
@@ -21,19 +23,16 @@
     }
     h1 {
       margin-bottom: 0.5rem;
-      /* Removed font-size restriction slightly so the image container fits naturally, 
-         but keeping h1 semantics is fine. */
       margin: 0; 
       padding: 0;
     }
     h1 a {
       text-decoration: none;
       color: #3b2f2f;
-      display: inline-block; /* Ensures the link wraps the image correctly */
+      display: inline-block; 
     }
-    /* Hover effect removed for image clarity, or you can keep opacity transition if desired */
     h1 a:hover {
-      opacity: 0.8; /* Subtle interaction effect for the logo */
+      opacity: 0.8; 
     }
     p.subtitle {
       font-style: italic;
@@ -66,7 +65,6 @@
       justify-content: center;
       text-decoration: none;
       color: inherit;
-      /* Added cursor pointer to all boxes so the div behaves like a link visually */
       cursor: pointer; 
     }
     
@@ -86,7 +84,6 @@
       font-size: 1.1rem;
     }
 
-    /* CSS for the buttons inside the box */
     .box-buttons {
       margin-top: 20px;
       display: flex;
@@ -96,12 +93,11 @@
     }
     
     .box-buttons a {
-      color: #000000; /* Pure black */
+      color: #000000; 
       text-decoration: underline; 
       font-weight: bold;
       font-size: 1rem;
       z-index: 10; 
-      /* Ensure these look clickable */
       cursor: pointer;
     }
     
